@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example;
+
+import "google/protobuf/empty.proto";
+import "example/data.proto";
+
+option java_package = "example";
+
+service Service {
+  rpc Fetch(TestRequest) returns (TestResponse);
+}
